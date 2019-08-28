@@ -59,7 +59,7 @@ public class ApplicationTest {
 //        		content().string(containsString("Hello World")));
         );
     }
-    
+//    
     
     @Autowired
     private ObjectMapper objectMapper ;
@@ -76,7 +76,7 @@ public class ApplicationTest {
         )
         .andDo(print())
         .andExpect(
-        		status().()
+        		status().isCreated()
         )
         .andExpect(
         		MockMvcResultMatchers.jsonPath(
